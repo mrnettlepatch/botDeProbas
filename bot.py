@@ -54,7 +54,7 @@ def ruleta(message):
 @bot.message_handler(commands=['moneda'])
 def moneda(message):
   cid = message.chat.id								
-  rnd = randrange(0,2)
+  rnd = randrange(0,int(2))
   if rnd == 0:
 	  bot.send_message(cid, "Cara")
   elif rnd == 1:
